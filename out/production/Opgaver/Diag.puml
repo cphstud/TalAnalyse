@@ -1,0 +1,18 @@
+@startuml
+class Main {
+main()
+
+}
+class getArr {
+createNumberArr(int size):int[] arr
+}
+class Talanalyse {
+sum : double
+counter : int
+computeAvg(int[] numbers) : double
+computeNumbersAboveAvg(int[] numbers):int
+}
+Main -- Talanalyse
+Main -- getArr
+
+@enduml
