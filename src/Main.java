@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Random;
 
 public class Main {
     /*
@@ -13,12 +11,8 @@ Finde antallet af tal, som er højere end gennemsnittet.
      */
     public static void main(String[] args) {
         //int[] numbers = {1,3,5,32,1,7};
+        MainController mainController = new MainController();
+        mainController.runProgram();
 
-        GetArr getArr = new GetArr();
-        int[] numbers = getArr.createNumberArr(10,100);
-        System.out.println(Arrays.toString(numbers));
-        Talanalyse talanalyse = new Talanalyse();
-        int antalTalOverAvg = talanalyse.getNumbersAboveAvg(numbers);
-        System.out.println("Antal: "+antalTalOverAvg);
     }
 }
